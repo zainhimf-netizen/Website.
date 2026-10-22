@@ -1,0 +1,23 @@
+.seller-hero {
+  padding: 27px; border: 1px solid #675638; border-radius: 18px;
+  background: radial-gradient(ellipse at top right,#3c3020,transparent 60%),var(--surface);
+  margin-bottom: 24px;
+}
+.seller-hero h1 { font-size: clamp(2rem,5vw,3rem); margin: 8px 0; }
+.seller-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.seller-panel { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:22px; min-width:0; }
+.seller-panel h2 { margin-top:0; font-size:1.2rem; }
+.chart-wrap { position:relative; width:100%; height:240px; }
+.chart-wrap canvas { width:100%; height:100%; }
+.seller-form { display:grid; gap:16px; max-width:700px; }
+.seller-form .field textarea { min-height:110px; resize:vertical; }
+.seller-nav { display:flex; flex-wrap:wrap; gap:9px; margin:0 0 22px; }
+.seller-nav a { border:1px solid var(--border); border-radius:9px; padding:8px 12px; color:var(--muted); }
+.seller-nav a:hover,.seller-nav a.active { color:var(--gold); border-color:var(--gold); }
+.seller-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.seller-message { display:none; margin:14px 0; padding:12px; border-radius:10px; }
+.seller-message.show { display:block; }
+.seller-message.success { background:#15382c; color:#baf5d8; }
+.seller-message.error { background:#3a2029; color:#ffc0c0; }
+.status { display:inline-block; padding:4px 9px; border-radius:20px; background:#273247; color:var(--gold); font-size:.78rem; }
+@media(max-width:750px) { .seller-grid { grid-template-columns:1fr; } }

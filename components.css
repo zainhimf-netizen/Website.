@@ -1,0 +1,4 @@
+/* Shared visual component helpers */
+.divider { height: 1px; background: var(--border); margin: 20px 0; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+.stack { display: grid; gap: 15px; }
